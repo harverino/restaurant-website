@@ -46,14 +46,6 @@
     filter: drop-shadow(0 0 0.9rem #7d7e75);
 }
 
-.logo {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-  }
-
 .header{
     padding-top: 10px;
     width: 100%;
@@ -270,3 +262,31 @@ nav ul a:hover:after{
 .dish-info button:hover{
     cursor: pointer;
 }
+
+.col-md-12 {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__slideInLeft {
+    animation-name: slideInLeft;
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
